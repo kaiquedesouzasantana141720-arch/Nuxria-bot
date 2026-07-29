@@ -7,7 +7,7 @@ app.get('/', (req, res) => res.send('Nuxria Online'));
 app.listen(3000);
 
 const token = process.env.TOKEN || require('./token.json').token;
-const clientId = '1530025218129530920'; // PEGA EM: discord.com/developers/applications
+const clientId = '1530025218129530920';
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]
